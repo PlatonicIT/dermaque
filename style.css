@@ -1,0 +1,338 @@
+/*
+Version: 1.0.0
+Author: Mehedi Hasan
+Author URI: http://promehedi.com/
+*/
+
+/* Fonts Face */
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('assets/fonts/HelveticaNeue-Bold.woff2') format('woff2'),
+        url('assets/fonts/HelveticaNeue-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('assets/fonts/HelveticaNeue.woff2') format('woff2'),
+        url('assets/fonts/HelveticaNeue.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('assets/fonts/HelveticaNeueMedium.woff2') format('woff2'),
+        url('assets/fonts/HelveticaNeueMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Global CSS */
+body {
+    font-family: 'Helvetica Neue';
+    color: #7E7E7E;
+    font-size: 16px;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+input:focus, textarea:focus, button:focus, a:focus {
+    outline: none;
+}
+
+button[type=submit], input[type=submit] {
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4 {
+	margin: 0 0 10px;
+    font-weight: 500;
+}
+
+img {
+    max-width: 100%;
+}
+
+input, textarea {
+    padding: 15px 25px;
+    margin-bottom: 1em;
+}
+
+.spacer {
+    height: 40px;
+    clear: both;
+}
+
+.button {
+    display: inline-block;
+    background: #C376B1;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 38px;
+    font-size: 18px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.16);
+}
+
+/* Content Style */
+.title {
+    font-size: 20px;
+    color: #C376B1;
+    margin-bottom: 30px;
+}
+
+.header-wrap {
+    padding: 20px 0;
+}
+
+.game-form-box > h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #C376B1;
+    margin-bottom: 0;
+}
+
+.game-form-box {
+    background: #FEF9FB;
+    border-radius: 25px;
+    text-align: center;
+    padding: 22px 40px;
+    box-shadow: 6px 10px 20px rgba(0,0,0,0.16);
+}
+
+.game-form-box input {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #D1D1D1;
+    border-radius: 2px;
+}
+
+.game-form-box > label {
+    position: relative;
+    padding-left: 20px;
+}
+
+.game-form-box > label input {
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+
+.game-form-box input[type=checkbox], .game-form-box input[type=radio] {
+    display: inline-block;
+    width: unset;
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+
+.game-form-box .input-group {
+    display: block;
+    margin: 40px 0;
+    padding: 0 20px;
+}
+
+.game-form-box label {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 13px;
+}
+
+.game-form-box .button {
+    margin-top: 15px;
+}
+
+.earnings {
+    margin-bottom: 30px;
+}
+
+.earnings li {
+    display: block;
+    font-weight: bold;
+    color: #1E2D4C;
+    position: relative;
+    padding-left: 40px;
+    font-size: 20px;
+}
+
+.check-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    background: #fc1c76;
+    background: -moz-linear-gradient(top, #fc1c76 0%, #fc9953 100%);
+    background: -webkit-linear-gradient(top, #fc1c76 0%,#fc9953 100%);
+    background: linear-gradient(to bottom, #fc1c76 0%,#fc9953 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc1c76', endColorstr='#fc9953',GradientType=0 );
+}
+
+.check-icon img, .check-icon i {
+    position: relative;
+    transform: translateY(-50%);
+    display: inline-block;
+}
+
+.earnings li .check-icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.earnings li+li {
+    margin-top: 15px;
+}
+
+.feather {
+    position: absolute;
+    z-index: -1;
+}
+
+.feather.light {
+    top: 14%;
+    left: 5%;
+}
+
+.feather.pink {
+    right: 5%;
+    top: 5%;
+}
+
+.input-group > p {
+    margin: 0;
+}
+
+.game-form-box .input-group label {
+    margin-left: 8px;
+    margin-bottom: 0;
+    display: inline-block;
+    width: unset;
+    font-size: 17px;
+    font-weight: 500;
+    color: #C376B1;
+}
+
+.game-form-box.game-box {
+    padding-top: 38px;
+    padding-bottom: 38px;
+}
+
+.game-form-box.game-box .input-group {
+    margin: 16px 0 30px 0;
+}
+
+.input-group > p input {
+    margin: 0;
+}
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    .button {
+        padding: 8px 32px;
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .game-form-box > h4, .earnings li {
+        font-size: 16px;
+    }
+
+    .game-form-box {
+        padding: 20px 15px;
+    }
+
+    .game-form-box .input-group {
+        margin: 30px 0;
+        padding: 0;
+    }
+
+    .check-icon img, .check-icon i {
+        transform: translate(0);
+    }
+
+    .spacer {
+        display: none;
+    }
+
+    .logo img {
+        max-height: 120px;
+    }
+    
+    input, textarea {
+        padding: 10px 15px;
+    }
+
+    .game-form-box label {
+        font-size: 10px;
+    }
+    
+    .game-form-box .input-group label {
+        font-size: 14px;
+    }
+
+    .game-form-box.game-box  {
+        margin-top: 20px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .feather.pink {
+        display: none;
+    }
+
+    .feather.light {
+        top: 20%;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    body {
+        font-size: 12px;
+    }
+
+    .logo img {
+        max-height: 85px;
+    }
+
+    .title, .game-form-box > h4, .earnings li {
+        font-size: 14px;
+    }
+
+    .game-form-box label {
+        font-size: 9px;
+    }
+
+    .youtube-video {
+        width: 100%;
+        height: 200px;
+    }
+}
