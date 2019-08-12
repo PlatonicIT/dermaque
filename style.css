@@ -139,6 +139,7 @@ input, textarea {
     width: unset;
     vertical-align: middle;
     margin-bottom: 0;
+    margin-top: 7px;
 }
 
 .game-form-box .input-group {
@@ -244,6 +245,13 @@ input, textarea {
     margin: 0;
 }
 
+.game-form-box .input-group > p {
+    display: flex;
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+    text-transform: inherit;
+}
 
 
 
