@@ -275,6 +275,13 @@ input, textarea {
         padding: 0;
     }
 
+    .game-form-box .input-group > p {
+        text-align: left;
+        width: 90%;
+        margin: 0 auto;
+        text-transform: inherit;
+    }
+
     .check-icon img, .check-icon i {
         transform: translate(0);
     }
