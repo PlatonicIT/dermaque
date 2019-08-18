@@ -135,11 +135,11 @@ input, textarea {
 }
 
 .game-form-box input[type=checkbox], .game-form-box input[type=radio] {
-    display: inline-block;
-    width: unset;
-    vertical-align: middle;
+    display: block;
+    width: 20px;
     margin-bottom: 0;
     margin-top: 7px;
+    float: left;
 }
 
 .game-form-box .input-group {
@@ -223,13 +223,14 @@ input, textarea {
 }
 
 .game-form-box .input-group label {
-    margin-left: 8px;
     margin-bottom: 0;
-    display: inline-block;
-    width: unset;
+    margin-left: 5px;
+    display: block;
     font-size: 17px;
     font-weight: 500;
     color: #C376B1;
+    width: calc(100% - 25px);
+    float: left;
 }
 
 .game-form-box.game-box {
@@ -246,11 +247,12 @@ input, textarea {
 }
 
 .game-form-box .input-group > p {
-    display: flex;
+    display: block;
     text-align: left;
     width: 90%;
     margin: 0 auto;
     text-transform: inherit;
+    overflow: hidden;
 }
 
 
@@ -342,19 +344,5 @@ input, textarea {
     .youtube-video {
         width: 100%;
         height: 200px;
-    }
-
-    .game-form-box .input-group > p {
-        display: block;
-    }
-
-    .game-form-box .input-group label {
-        vertical-align: text-top;
-        display: inline;
-    }
-
-    .game-form-box input[type=checkbox], .game-form-box input[type=radio] {
-        vertical-align: middle;
-        display: inline;
     }
 }
