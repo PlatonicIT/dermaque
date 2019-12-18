@@ -138,9 +138,7 @@ input, textarea {
     display: block;
     width: unset;
     margin-bottom: 0;
-    margin-top: 5px;
     float: left;
-    margin-left:2px;
 }
 
 .game-form-box .input-group {
